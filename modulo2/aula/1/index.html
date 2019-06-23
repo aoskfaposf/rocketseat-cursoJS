@@ -8,12 +8,15 @@
 </head>
 <body>
       <div id="app">
-          <input type="text" name="nome">
-          <input type="text" name="nome2">
-          <button class='botão'>Adicionar</button>
+
       </div>
       <script>
-         
+         var linkElement = document.createElement('a');
+         linkElement.setAttribute('href','https://www.youtube.com/watch?v=tQblSS2kl4Q');
+         var textElement = document.createTextNode('Clique para virar emo');
+         linkElement.appendChild(textElement);
+         var containerElement = document.querySelector('#app');
+         containerElement.appendChild(linkElement);
       </script>
 </body>
 </html>
