@@ -15,7 +15,17 @@ function renderTodos() {
      var todoElement = document.createElement('li');
      var todoText = document.createTextNode(todo);
 
+     var linkElement = document.createElement('a');
+
+      linkElement.setAttribute('href', '#')
+
+     var linkText = document.createTextNode('Excluir');
+
+     linkElement.appendChild(linkText);
+
      todoElement.appendChild(todoText);
+     todoElement.appendChild(linkElement);
+     
      listElement.appendChild(todoElement);
    }
 }
@@ -30,4 +40,4 @@ function addTodo() {
   renderTodos();
 }
 
-addTodo = buttonElement.onclick;
+buttonElement.onclick = addTodo;
