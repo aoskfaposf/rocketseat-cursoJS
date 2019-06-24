@@ -19,3 +19,13 @@ function renderTodos() {
      listElement.appendChild(todoElement);
    }
 }
+
+renderTodos();
+
+function addTodo() {
+  var todoText = inputElement.nodeValue;
+  todos.push(todoText);
+  inputElement.value = '';
+  renderTodos();
+}
+buttonElement.onclick = addTodo;
