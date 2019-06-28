@@ -3,5 +3,9 @@ var promises = function() {
     var xhr = new XMLHttpRequest();
     xhr.open('https://api.github.com/users/aoskfaposf');
     xhr.send(null);
+
+    xhr.onreadystatechange = function () {
+        
+    }
     });
 }
