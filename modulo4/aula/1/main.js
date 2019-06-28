@@ -17,5 +17,7 @@ var promises = function() {
 }
 
 minhaPromise()
-    .then(function(response) {})
+    .then(function(response) {
+        console.log(response);
+    })
     .catch(function(error) {})
