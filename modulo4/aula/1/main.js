@@ -5,7 +5,7 @@ var promises = function() {
     xhr.send(null);
 
     xhr.onreadystatechange = function () {
-        
+        if(xhr.readyState === 4)
     }
     });
 }
