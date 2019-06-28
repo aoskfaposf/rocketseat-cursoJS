@@ -5,6 +5,6 @@ xhr.send(null);
 
 xhr.onreadystatechange = function() {
     if (xhr.readyState === 4) {
-        console.log(JSON.parse)
+        console.log(JSON.parse(xhr.responseText));
     }
 }
