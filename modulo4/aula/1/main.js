@@ -17,3 +17,4 @@ var promises = function() {
 }
 
 var resultado = minhaPromise();
+console.log(resultado);
