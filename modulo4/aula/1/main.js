@@ -16,3 +16,6 @@ var promises = function() {
  });
 }
 
+minhaPromise()
+    .then(function(response) {})
+    .catch(function(error) {})
