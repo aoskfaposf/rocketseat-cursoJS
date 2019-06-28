@@ -15,3 +15,5 @@ var promises = function() {
   }
  });
 }
+
+var resultado = minhaPromise();
